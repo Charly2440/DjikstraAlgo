@@ -1,7 +1,9 @@
 import networkx as nx
 from matplotlib import pyplot as plt
 import heapq
+#Clase que genera el objeto grafo a partir de pasarle el nombre de un archivo
 class GraphCreator:
+
     def __init__(self, rootData):
         self.rootData = rootData
         self.graph = nx.Graph()

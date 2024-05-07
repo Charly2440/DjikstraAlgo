@@ -1,6 +1,6 @@
-“Pueblo Paleta”, “Aldea Azalea”, 100
-“Aldea Azalea”, “Ciudad Safiro”, 150
-“Pueblo Paleta”, “Ciudad Safiro”, 800
-“Ciudad Lavanda”, “Aldea Fuego”, 300
-“Pueblo Paleta”, “Aldea Fuego”, 230
-“Ciudad Lavanda”, “Aldea Azalea”, 180
+Pueblo Paleta, Aldea Azalea, 100
+Aldea Azalea, Ciudad Safiro, 150
+Pueblo Paleta, Ciudad Safiro, 800
+Ciudad Lavanda, Aldea Fuego, 300
+Pueblo Paleta, Aldea Fuego, 230
+Ciudad Lavanda, Aldea Azalea, 180
