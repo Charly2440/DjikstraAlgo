@@ -1,5 +1,6 @@
 
 class DjikstraAlgorithm:
+    #Constructor de algoritmo a partir del grafo dado
     def __init__(self, graph):
         self.graph = graph
         self.visited = {}
@@ -12,6 +13,7 @@ class DjikstraAlgorithm:
         for node in self.graph.nodes():
             self.previous[node] = None
 
+    #Metodo para la implementacion del algoritmo
     def distanceDjikstra(self, start, end):
         self.distances[start] = 0
 

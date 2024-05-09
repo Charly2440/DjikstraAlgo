@@ -1,13 +1,7 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 from GraphCreator import GraphCreator
 from DjikstraAlgorithm import DjikstraAlgorithm
 
 
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     graph = GraphCreator(".\\rutas.txt")
 
@@ -20,7 +14,7 @@ if __name__ == '__main__':
         distancia, path = DjikstraAlgorithm(graph.createGraph()).distanceDjikstra("Aldea Fuego", "Aldea Azalea")
         print("\nLa mejor trayectoria desde", region, "hasta", destination, "es:")
         print("Distancia:", distancia)
-        print("Trayectoria:", path)
+        print("Trayectoria en orden:", path)
 
         res = input("\n¿Quieres observar el mapa? (Sí = 1, No = 0): ")
         if res == "1":

@@ -3,11 +3,12 @@ from matplotlib import pyplot as plt
 import heapq
 #Clase que genera el objeto grafo a partir de pasarle el nombre de un archivo
 class GraphCreator:
-
+    #Constructor, crea grafico con el archivo que se le pasa
     def __init__(self, rootData):
         self.rootData = rootData
         self.graph = nx.Graph()
 
+    #Metodo para leer los datos y limpiarlos
     def parseData(self):
         relations = {}
         with open(self.rootData, 'r', encoding="utf-8") as file:
@@ -18,6 +19,7 @@ class GraphCreator:
 
         return relations
 
+    #Metodo para crear los nodos en el grafo
     def createNodes(self):
         relations = self.parseData()
         nodes = []
@@ -30,6 +32,7 @@ class GraphCreator:
             self.graph.add_node(node)
         return self.graph.nodes()
 
+    # Metodo para crear las relaciones en el grafo, con sus debidos pesos
     def createEdges(self):
         relations = self.parseData()
         edges = list(relations.keys())
@@ -37,6 +40,7 @@ class GraphCreator:
             self.graph.add_edge(edge.split(",")[0], edge.split(",")[1][1:], weight=relations[edge])
         return self.graph.edges()
 
+    # Metodo para crear grafo con todo lo anterior
     def createGraph(self):
         self.createNodes()
         self.createEdges()
